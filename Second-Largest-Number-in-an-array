@@ -1,0 +1,18 @@
+class Solution {
+    public int getSecondLargest(int[] arr) {
+        Set<Integer> set=new HashSet<>();
+        for(int num:arr){
+            set.add(num);
+        }
+        int[] a1=new int[set.size()];
+        int i=0;
+        for(int nums:set){
+            a1[i++]=nums;
+        }
+        Arrays.sort(a1);
+        if(a1.length==1){
+            return -1;
+        }
+        return a1[a1.length-2];
+    }
+}
