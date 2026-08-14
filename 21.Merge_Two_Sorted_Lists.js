@@ -21,7 +21,6 @@ else if(list1&&list2===null){
 else if(list1===null&&list2===null){
     return list1;
 }
-else{
     let list3=new ListNode;
     let temp=list3;
     while(list1 && list2){
@@ -45,5 +44,5 @@ else{
     }
     list3=list3.next;
     return list3;
-}
+
 };
